@@ -24,7 +24,7 @@ import {
 
     constructor(){}
 
-    async fetchCollection(onCallback) {
+    async fetchCollection(onCallback: any) {
 
       const recipeRepository = getManager().getRepository(Recipe);
 
@@ -37,7 +37,7 @@ import {
 
     }
 
-    async fetchRecipe(id, onCallback) {
+    async fetchRecipe(id: any, onCallback: any) {
 
       const recipeRepository = getManager().getRepository(Recipe);
       const ingredientsRepository = getManager().getRepository(Ingredient);
@@ -64,7 +64,7 @@ import {
       });
     }
 
-    async createRecipe(data, onCallback) {
+    async createRecipe(data: any, onCallback: any) {
 
         var today = new Date();
 

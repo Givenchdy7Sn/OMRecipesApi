@@ -1,7 +1,7 @@
 import httpStatus from 'http-status';
 import { RecipeService } from '../service/RecipeService';
 
-export const createRecipe = ((req, res) => {
+export const createRecipe = ((req: any, res: any) => {
 
     const data = req.body;
 

@@ -1,7 +1,7 @@
 import httpStatus from 'http-status';
 import { RecipeService } from '../service/RecipeService';
 
-export const fetchRecipesCollection = ((req, res) => {
+export const fetchRecipesCollection = ((req: any, res: any) => {
 
     const data = req.params;
 
