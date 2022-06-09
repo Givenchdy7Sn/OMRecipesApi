@@ -3,14 +3,8 @@ import {
   Entity,
   PrimaryGeneratedColumn 
 } from "typeorm";
-
-import {
-  Ingredient
-} from "c:/Users/mgmoj/Videos/old mutual/recipesApi/src/entity/Ingredient";
-
-import { 
-  RecipeStep 
-} from "c:/Users/mgmoj/Videos/old mutual/recipesApi/src/entity/RecipeStep";
+import { Ingredient } from "./Ingredient";
+import { RecipeStep } from "./RecipeStep";
 
 @Entity()
 export class Recipe {
