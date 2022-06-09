@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist" ,
+      /* Experimental Options */
+      "experimentalDecorators": true, 
+      "emitDecoratorMetadata": true, 
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      /* Advanced Options */
+      "target": "es6",
+      "forceConsistentCasingInFileNames": true 
+    }
+  }
