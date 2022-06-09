@@ -28,7 +28,7 @@ router.get('/health', (req,res) => {
 
 app.use('/api/om/recipe', routes);
 
-createConnection().then(async connection => {
+createConnection().then(async (connection: any) => {
 
   app.listen(PORT, () => {
      console.log('Api running on port :  ' + PORT);
