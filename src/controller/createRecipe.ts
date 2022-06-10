@@ -16,7 +16,7 @@ export const createRecipe = ((req: any, res: any) => {
 
     var service = new RecipeService();
 
-    const response = service.createRecipe(data, (response) => {
+    service.createRecipe(data, (response) => {
        res.status(response.status);
         res.json({
             "message": response.message,

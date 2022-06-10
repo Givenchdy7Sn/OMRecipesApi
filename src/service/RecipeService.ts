@@ -79,7 +79,7 @@ import {
         const recipeSteps = data.steps;
 
         const recipeRepository = getManager().getRepository(Recipe);
-        var res = await recipeRepository.save(recipe);
+        var res: any = await recipeRepository.save(recipe);
 
         if (res.id) {
 
