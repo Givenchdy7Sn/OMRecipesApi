@@ -5,7 +5,9 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node --loader ts-node/esm index.ts"
+    "build": "node --loader ts-node/esm index.ts",
+    "buildp": "rimraf ./build && tsc",
+    "startp": "npm run build && node build/index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +19,13 @@
     "http-status": "^1.5.2",
     "mysql": "^2.18.1",
     "pg": "^8.7.3",
+    "pm2": "^5.2.0",
     "reflect-metadata": "^0.1.13",
     "ts-node": "^10.8.1",
     "typeorm": "^0.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.41",
+    "rimraf": "^3.0.2"
   }
 }
