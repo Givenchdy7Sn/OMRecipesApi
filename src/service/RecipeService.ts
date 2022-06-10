@@ -55,8 +55,10 @@ import {
         recipeId: id
       });
 
-      res.ingredients = ingredientsData;
-      res.steps = stepsData;
+      if (res != null) {
+        res.ingredients = ingredientsData;
+        res.steps = stepsData;
+      }
 
       onCallback(res, {
         message: "Recipe fetched successfully",
