@@ -12,36 +12,36 @@ export class Recipe {
     constructor(){}
 
     @PrimaryGeneratedColumn()
-    id: number;
+    id: number | undefined;
 
     @Column()
-    title: string;
+  title!: string;
 
     @Column({
-        nullable: true
-    })
-    mealType: string;
+    nullable: true
+  })
+  mealType!: string;
 
     @Column({
-        nullable: true
-    })
-    peopleServed: number;
+    nullable: true
+  })
+  peopleServed!: number;
 
     @Column()
-    difficultyLevel: string;
+  difficultyLevel!: string;
 
     @Column({
-        nullable: true
-    })
-    createdTime: string;
+    nullable: true
+  })
+  createdTime!: string;
 
     @Column({
-        nullable: true
-    })
-    createdDate: string;
+    nullable: true
+  })
+  createdDate!: string;
 
-    steps: RecipeStep[];
-    ingredients: Ingredient[];
+    steps!: RecipeStep[];
+    ingredients!: Ingredient[];
 
 } 
 

@@ -1,8 +1,11 @@
 import httpStatus from 'http-status';
 
-const { 
-  createConnection
- } = require("typeorm");
+// const { 
+//   createConnection
+//  } = require("typeorm");
+
+ import { createConnection } from 'typeorm';
+
 
  import { 
    getManager

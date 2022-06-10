@@ -8,18 +8,18 @@ import {
 export class Ingredient {
 
     @PrimaryGeneratedColumn()
-    id: number;
+    id: number | undefined;
 
     @Column()
-    title: string;
+    title!: string;
 
     @Column()
-    amount: number;
+    amount!: number;
 
     @Column()
-    unit: string;
+    unit!: string;
 
     @Column()
-    recipeId: number;
+    recipeId!: number;
 
 }

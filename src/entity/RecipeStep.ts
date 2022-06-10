@@ -8,15 +8,15 @@ import {
 export class RecipeStep {
 
     @PrimaryGeneratedColumn()
-    id: number;
+    id: number | undefined;
 
     @Column()
-    description: string;
+    description!: string;
 
     @Column()
-    stepNumber: number;
+    stepNumber!: number;
 
     @Column()
-    recipeId: number;
+    recipeId!: number;
 
 }
