@@ -7,7 +7,7 @@ export const fetchRecipesCollection = ((req: any, res: any) => {
 
     var service = new RecipeService();
 
-    service.fetchCollection((data, extraInfo) => {
+    service.fetchCollection((data: any, extraInfo: any) => {
 
         res.status(extraInfo.status);
         res.json({

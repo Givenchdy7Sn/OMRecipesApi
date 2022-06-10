@@ -15,7 +15,7 @@ export const fetchRecipe = ((req: any, res: any) => {
 
     var service = new RecipeService();
 
-    service.fetchRecipe(data.id, (data, extraInfo) => {
+    service.fetchRecipe(data.id, (data: any, extraInfo: any) => {
 
         res.status(extraInfo.status);
         res.json({
