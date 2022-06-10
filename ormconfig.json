@@ -3,7 +3,7 @@
     "host": "localhost",
     "port": 5432,
     "username": "postgres",
-    "password": "admin",
+    "password": "adminroot",
     "database": "omrecipedb",
     "entities": ["src/entity/*.js"],
     "logging": true,
