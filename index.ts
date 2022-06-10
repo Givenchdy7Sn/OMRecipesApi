@@ -2,9 +2,11 @@ import express from 'express';
 import cors from 'cors';
 import { router } from './routes';
 
-const { 
-  createConnection
- } = require("typeorm");
+import { createConnection } from 'typeorm';
+
+// const { 
+//   createConnection
+//  } = require("typeorm");
 
 const app = express();
 const routes = router;
