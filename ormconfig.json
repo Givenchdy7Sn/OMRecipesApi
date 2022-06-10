@@ -1,6 +1,6 @@
 {
     "type": "postgres",
-    "host": "localhost",
+    "host": "omrecipedb3.ccxdfp1xnayb.af-south-1.rds.amazonaws.com",
     "port": 5432,
     "username": "postgres",
     "password": "adminroot",
